@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/style_header" >
+
+        <TextView
+            android:id="@+id/back_btn"
+            style="@style/style_header_text"
+            android:text="@string/setup_btn" />
+
+        <ImageView
+            android:id="@+id/home_btn"
+            style="@style/style_content_header_img"
+            android:src="@drawable/sel_home"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_divider_header" />
+
+        <ImageView
+            android:id="@+id/search"
+            style="@style/style_content_header_img"
+            android:src="@drawable/sel_search"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/search_devide"
+            layout="@layout/layout_divider_header"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/refresh_btn"
+            style="@style/style_content_header_img"
+            android:src="@drawable/ic_refresh"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <br.com.dina.ui.widget.UITableView
+                    android:id="@+id/tableView2"
+                    style="@style/UITableView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <br.com.dina.ui.widget.UITableView
+                    android:id="@+id/tableView3"
+                    style="@style/UITableView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <br.com.dina.ui.widget.UITableView
+                    android:id="@+id/tableView1"
+                    style="@style/UITableView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

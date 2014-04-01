@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ratio">
+        <item>全 屏</item>
+        <item>原 始</item>
+        <item>4：3</item>
+        <item>16：9</item>
+        <item>16：10</item>
+    </string-array>
+    <string-array name="decode">
+        <item>软件解码</item>
+        <item>硬件解码</item>
+    </string-array>
+    <string-array name="seekbar">
+        <item>隐藏</item>
+        <item>显示</item>
+    </string-array>
+
+</resources>
